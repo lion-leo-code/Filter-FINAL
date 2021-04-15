@@ -1,0 +1,35 @@
+h1{
+    font-size: 50px !important;
+}
+.btn-success:hover{
+background-color: red;
+}
+canvas{
+    animation-name: colorchange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform: scaleX(-1);
+}
+@keyframes colorchange {
+    0%{box-shadow: 1px 1px 100px purple;}
+    25%{box-shadow: 1px 1px 100px blue;}
+    75%{box-shadow: 1px 1px 100px teal;}
+    100%{box-shadow: 1px 1px 100px purple;}
+}
+body{
+    animation-name: backdrop;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes backdrop {
+    0%{background-image: url('https://st3.depositphotos.com/1005491/14764/v/600/depositphotos_147646093-stock-video-animated-background-of-moving-gradient.jpg'); background-size: cover}
+    25%{background-image: url('https://www.vignal-group.com/media/cache/r/s/rse_nature_route.jpg'); background-size: cover;}
+    75%{background-image: url('https://www.techrepublic.com/a/hub/i/r/2020/04/21/92fefa52-5abd-4cb6-88ad-f440a9952a8b/resize/1200x900/159117c93c0182e2d4d4f279b3fbbc40/ca-9.jpg'); background-size: cover;}    
+    100%{background-image: url('https://st3.depositphotos.com/1005491/14764/v/600/depositphotos_147646093-stock-video-animated-background-of-moving-gradient.jpg'); background-size: cover}
+}
+.btn-info:hover{
+    background-color: black;
+}
+.btn-info{
+    margin: 0px 10px;
+}
